@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.cell {
+    margin-top: 15px;
+}
+.container .cell a {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: black;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+}

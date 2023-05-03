@@ -43,6 +43,7 @@ header .logo {
 header .main-nav {
     display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -50,7 +51,7 @@ header .main-nav {
 @media (max-width: 767px) {
     header .main-nav {
         margin: auto;
-        padding: 10px;
+        text-align: center;
         font-size: 14px;
     }
 }
