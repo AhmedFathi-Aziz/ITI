@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel = "stylesheet" href = "css/main.css"/>
+    <title>Contact me</title>
+
+    <style>
+        body {
+           height: 100vh;
+           /* background: linear-gradient(125deg, #6f6df4, #4c46f5); */
+           background-color: #3a6cf4;
+           font-weight: 500;
+        }
+    </style>
+
+</head>
+<body>
+    <section class = "contact-page">
+        <h1>Get in touch</h1>
+        <p>Have any questions or suggestions? Drop us a messgae</p>
+
+        <form action = "">
+           <div class = "row">
+                <div class = "col">
+                    <label for = "name">Name</label>
+                    <input type = "text" id = "name" placeholder = "Your Name" name = "name">
+                </div>
+                <div class = "col">
+                    <label for = "email">Email</label>
+                    <input type = "email" id = "email" placeholder = "Your Email" name = "email">
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col">
+                    <label for = "subject">Subject</label>
+                    <input type = "text" id = "subject" placeholder = "Your Subject" name = "subject">
+                </div>
+                <div class = "col">
+                    <label for = "contact">Phone number</label>
+                    <input type = "tel" id = "contact" placeholder = "Your Phone" name = "phone ">
+                </div>
+            </div>
+
+            <div class = "row">
+               <div class = "col">
+                    <label for = "issue">Describe your issue</label>
+                    <textarea id = "issue" placeholder = "Describe your issue in detail here" row = "3"></textarea>
+               </div>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>

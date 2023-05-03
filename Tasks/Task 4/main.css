@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    color: #2196f3;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    header .logo {
+        width: 100%;
+    }
+}
+
+header .main-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    header .main-nav {
+        margin: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+header .main-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 104px;
+    color: black;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .main-nav li:hover {
+    color: #2196f3;
+    background-color: #fafafa;
+}
+
+
+section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+section .box {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+section .container .box img {
+    max-width: 100%;
+}
+
+section .box .content {
+    padding: 20px;
+}
+section .box .content h3 {
+    transition: 0.3s;
+    margin: 0;
+    cursor: pointer;
+}
+section .box .content h3:hover {
+    color: #2196f3;
+}
+section .box .content p:hover {
+    color: #2196f3;
+}
+section .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #777;
+}
+
+section .box .info {
+    padding: 20px;
+}
+
+footer {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+}
+
+footer p {
+    color: white;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+footer p:hover {
+    color: #2196f3;
+}
